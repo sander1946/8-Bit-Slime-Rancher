@@ -14,6 +14,9 @@ distanceBonk = 40;
 distanceBonkHeight = 12;
 speedBonk = 1.5;
 z = 0;
+invulnerable = 0;
+flash = 0;
+flashShader = shWhiteFlash;
 
 animationEndScript = -1;
 
