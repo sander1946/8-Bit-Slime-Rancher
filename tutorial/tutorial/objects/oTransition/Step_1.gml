@@ -1,6 +1,9 @@
 /// @desc progress transition
 
-with (oPlayer) state = playerStateTransition;
+with (oPlayer) 
+{
+	if (state != playerStateDead) state = playerStateTransition;
+}
 
 if (leading == OUT)
 {

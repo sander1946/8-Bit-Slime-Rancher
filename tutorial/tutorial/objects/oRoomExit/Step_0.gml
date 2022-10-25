@@ -1,7 +1,7 @@
 /// @desc cause a room transtition
 if (instance_exists(oPlayer)) && (position_meeting(oPlayer.x, oPlayer.y, id))
 {
-	if(!instance_exists(oTransition))
+	if(!instance_exists(oTransition)) && (oPlayer.state != playerStateDead)
 	{
 		global.targetRoom = targetRoom;
 		global.targetX = targetX;
