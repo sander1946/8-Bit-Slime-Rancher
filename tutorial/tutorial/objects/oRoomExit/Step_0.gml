@@ -11,7 +11,7 @@ if (instance_exists(oPlayer)) && (position_meeting(oPlayer.x, oPlayer.y, id))
 		else global.targetDirection = oPlayer.direction;
 	
 		with(oPlayer) state = playerStateTransition;
-		roomTransition(TRANS_TYPE.FADE, targetRoom);	
+		roomTransition(TRANS_TYPE.SLIDE, targetRoom);	
 		instance_destroy();
 	}
 }

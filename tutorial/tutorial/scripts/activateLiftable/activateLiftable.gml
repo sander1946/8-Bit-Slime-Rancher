@@ -4,8 +4,11 @@ function activateLiftable(_id)
 	if (global.iLifted == noone)
 	{
 		playerActOutAnimation(sPlayerLift);
-		global.iLifted = _id;
 		
+		spriteIdle = sPlayerCarry;
+		spriteRun = sPlayerRunCarry;
+		
+		global.iLifted = _id;
 		with (global.iLifted)
 		{
 			lifted = true;

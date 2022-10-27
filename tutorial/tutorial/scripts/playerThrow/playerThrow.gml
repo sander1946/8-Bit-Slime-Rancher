@@ -5,7 +5,6 @@ function playerThrow()
 	{
 		lifted = false;
 		persistent = false;
-		thrown = true;
 		z = 13;
 		throwPeakHeight = z + 10;
 		throwDistance = entityThrowDistance;
@@ -15,7 +14,11 @@ function playerThrow()
 		direction = other.direction;
 		xstart = x;
 		ystart = y;
+		thrown = true;
 	}
 	playerActOutAnimation(sPlayerLift);
+	
 	global.iLifted = noone;
+	spriteIdle = sPlayer;
+	spriteRun = sPlayerRun;
 }

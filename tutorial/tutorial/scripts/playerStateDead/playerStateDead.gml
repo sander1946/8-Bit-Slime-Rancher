@@ -31,7 +31,7 @@ function playerStateDead()
 			image_index = image_number-1;
 			global.targetX = -1;
 			global.targetY = -1;
-			roomTransition(TRANS_TYPE.FADE, rVillage);
+			roomTransition(TRANS_TYPE.SLIDE, rVillage);
 		}
 	}
 }
