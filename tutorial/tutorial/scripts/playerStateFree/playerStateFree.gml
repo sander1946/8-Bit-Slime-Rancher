@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerStateFree()
 {
 	// Movement
@@ -96,8 +94,15 @@ function playerStateFree()
 				}
 			}
 		}
-
-		
-		
+	}
+	if (keyItem) && (!keyActivate) && (global.playerHasAnyItems) && (global.playerItemSlot[global.playerItemSlotEquipped] != ITEM.NONE)
+	{
+		switch (global.playerItemSlot[global.playerItemSlotEquipped])
+		{
+			case ITEM.BOMB: useItemBomb();break;
+			case ITEM.BOW: useItemBow();break;
+			case ITEM.HOOK: useItemHook();break;
+			default: break;
+		}
 	}
 }

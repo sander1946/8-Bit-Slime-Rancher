@@ -41,5 +41,30 @@ draw_text(_xx, _yy-1, _str);
 draw_set_color(c_white);
 draw_text(_xx, _yy, _str);
 
+// draw item box 1
+_xx = 100;
+_yy = 160;
+
+drawItemBox(_xx, _yy, global.playerItemSlot[SLOT.SLOT1]);
+
+// draw item box 2
+_xx = 130;
+_yy = 160;
+
+drawItemBox(_xx, _yy, global.playerItemSlot[SLOT.SLOT2]);
+
+// draw item box 3
+_xx = 160;
+_yy = 160;
+
+drawItemBox(_xx, _yy, global.playerItemSlot[SLOT.SLOT3]);
+
+// draw item box 4
+_xx = 190;
+_yy = 160;
+
+drawItemBox(_xx, _yy, global.playerItemSlot[SLOT.SLOT4]);
+
+
 
 

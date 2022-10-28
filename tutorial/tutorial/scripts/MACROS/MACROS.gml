@@ -20,3 +20,20 @@ enum ENEMYSTATE
 	DIE,
 	WAIT	
 }
+
+enum ITEM
+{
+	NONE,
+	BOMB,
+	BOW,
+	HOOK,
+	TYPE_COUNT
+}
+enum SLOT
+{
+	SLOT1,
+	SLOT2,
+	SLOT3,
+	SLOT4,
+	TYPE_COUNT
+}

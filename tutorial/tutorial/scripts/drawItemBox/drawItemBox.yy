@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "collectCoins",
+  "name": "drawItemBox",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "entity",
-    "path": "folders/Scripts/entity.yy",
+    "name": "game General",
+    "path": "folders/Scripts/game General.yy",
   },
 }
