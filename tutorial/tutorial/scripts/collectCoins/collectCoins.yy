@@ -1,8 +1,8 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "dialogueResponses",
-  "isDnD": true,
+  "name": "collectCoins",
+  "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "entity",
