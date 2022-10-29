@@ -7,6 +7,14 @@ keyActivate = keyboard_check_pressed(vk_space);
 keyAttack = keyboard_check_pressed(vk_shift);
 keyItem = keyboard_check_pressed(vk_control);
 
+// item select menu
+keyItemSelectLeft = keyboard_check_pressed(ord("Q"));
+keyItemSelectRight = keyboard_check_pressed(ord("E"));
+keyItemSelect1 = keyboard_check_pressed(ord("1"));
+keyItemSelect2 = keyboard_check_pressed(ord("2"));
+keyItemSelect3 = keyboard_check_pressed(ord("3"));
+keyItemSelect4 = keyboard_check_pressed(ord("4"));
+
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 

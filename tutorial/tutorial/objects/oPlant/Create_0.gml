@@ -8,6 +8,6 @@ entityDropList = choose
 	[oCoin, oCoin],
 	[oBombDrop],
 	[oCoin, oBombDrop],
-	-1,
+	[oArrowDrop],
 	-1
 )

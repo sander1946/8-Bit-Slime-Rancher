@@ -95,7 +95,7 @@ function playerStateFree()
 			}
 		}
 	}
-	if (keyItem) && (!keyActivate) && (global.playerHasAnyItems) && (global.playerItemSlot[global.playerItemSlotEquipped] != ITEM.NONE)
+	if (keyItem) && (!keyActivate) && (global.playerItemSlot[global.playerItemSlotEquipped] != ITEM.NONE)
 	{
 		switch (global.playerItemSlot[global.playerItemSlotEquipped])
 		{
@@ -104,5 +104,36 @@ function playerStateFree()
 			case ITEM.HOOK: useItemHook();break;
 			default: break;
 		}
+	}
+	
+	// cycle items
+	var _cycleDirection = keyItemSelectRight - keyItemSelectLeft;
+	var _slot1 = keyItemSelect1;
+	var _slot2 = keyItemSelect2;
+	var _slot3 = keyItemSelect3;
+	var _slot4 = keyItemSelect4;
+	
+	if (_cycleDirection != 0)
+	{
+		global.playerItemSlotEquipped += _cycleDirection;
+		if (global.playerItemSlotEquipped < 1) global.global.playerItemSlotEquipped = SLOT.TYPE_COUNT - 1;
+		if (global.playerItemSlotEquipped >= SLOT.TYPE_COUNT) global.playerItemSlotEquipped = SLOT.SLOT1;
+	}
+	
+	if (_slot1 == 1)
+	{
+		 global.playerItemSlotEquipped = SLOT.SLOT1;
+	}
+	if (_slot2 == 1)
+	{
+		 global.playerItemSlotEquipped = SLOT.SLOT2;
+	}
+	if (_slot3 == 1)
+	{
+		 global.playerItemSlotEquipped = SLOT.SLOT3;
+	}
+	if (_slot4 == 1)
+	{
+		 global.playerItemSlotEquipped = SLOT.SLOT4;
 	}
 }

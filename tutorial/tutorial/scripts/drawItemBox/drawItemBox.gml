@@ -1,6 +1,6 @@
-function drawItemBox(_x, _y, _item)
+function drawItemBox(_x, _y, _slot)
 {
-	if (_item == global.playerItemSlotEquipped+1)
+	if (_slot == global.playerItemSlotEquipped)
 	{
 		draw_sprite(sItemUIBox, 1, _x, _y);
 	}
@@ -8,8 +8,8 @@ function drawItemBox(_x, _y, _item)
 	{
 		draw_sprite(sItemUIBox, 0, _x, _y);
 	}
-	draw_sprite(sItemUI, _item, _x, _y)
-	if (global.playerAmmo[_item] != -1)
+	draw_sprite(sItemUI, global.playerItemSlot[_slot], _x, _y)
+	if (global.playerAmmo[global.playerItemSlot[_slot]] != -1)
 	{
 		draw_set_font(fAmmo);
 		draw_set_halign(fa_right);
@@ -19,7 +19,7 @@ function drawItemBox(_x, _y, _item)
 		(
 			_x + sprite_get_width(sItemUI)+1,
 			_y + sprite_get_height(sItemUI)+1,
-			string(global.playerAmmo[_item])
+			string(global.playerAmmo[global.playerItemSlot[_slot]])
 		);
 	}
 }
