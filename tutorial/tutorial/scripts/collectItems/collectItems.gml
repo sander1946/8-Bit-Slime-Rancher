@@ -6,5 +6,5 @@ function collectCoins(_amount)
 function collectAmmo(_array)
 {
 	// array = [type, amount]
-	global.playerAmmo[_array[0]] += _array[1];
+	invAdd(_array[0], _array[1]);
 }

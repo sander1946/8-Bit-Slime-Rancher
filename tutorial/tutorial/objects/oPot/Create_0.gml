@@ -1,3 +1,9 @@
 event_inherited();
 
-entityDropList = [oCoin, oCoin, oCoin];
+entityDropList = choose
+(
+	[oBombDrop],
+	[oCoin, oCoin],
+	[oCoin, oCoin, oCoin],
+	[oArrowDrop]
+);

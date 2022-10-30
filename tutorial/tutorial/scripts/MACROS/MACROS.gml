@@ -31,6 +31,7 @@ enum ITEM
 }
 enum SLOT
 {
+	SLOT0,
 	SLOT1,
 	SLOT2,
 	SLOT3,

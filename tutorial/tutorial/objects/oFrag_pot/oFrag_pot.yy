@@ -29,7 +29,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bounceCount","path":"objects/oFragment/oFragment.yy",},"objectId":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},"value":"1",},
+  ],
   "parent": {
     "name": "fragments",
     "path": "folders/Objects/fragments.yy",

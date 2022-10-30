@@ -31,3 +31,10 @@ if (global.targetX != -1)
 	y = global.targetY;
 	direction = global.targetDirection;
 }
+
+if (global.iLifted != noone)
+{
+	spriteIdle = sPlayerCarry;
+	spriteRun = sPlayerRunCarry;
+	sprite_index = spriteIdle;
+}

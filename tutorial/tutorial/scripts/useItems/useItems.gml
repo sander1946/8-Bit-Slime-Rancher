@@ -2,7 +2,8 @@ function useItemBomb()
 {
 	if (global.playerAmmo[ITEM.BOMB] > 0) && (global.iLifted == noone)
 	{
-		global.playerAmmo[ITEM.BOMB]--;
+		invRemove(ITEM.BOMB, 1)
+//		global.playerAmmo[ITEM.BOMB]--;
 		var _bomb = instance_create_layer(x, y, "Instances", oBomb);
 		activateLiftable(_bomb);
 	}
@@ -12,7 +13,8 @@ function useItemBow()
 {
 	if (global.playerAmmo[ITEM.BOW] > 0) && (global.iLifted == noone)
 	{
-		global.playerAmmo[ITEM.BOW]--;
+		invRemove(ITEM.BOW, 1)
+//		global.playerAmmo[ITEM.BOW]--;
 		playerActOutAnimation(sPlayerBow, playerFireArrow)
 	}
 }

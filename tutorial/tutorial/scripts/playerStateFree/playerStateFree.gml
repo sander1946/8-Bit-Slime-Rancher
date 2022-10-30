@@ -116,7 +116,7 @@ function playerStateFree()
 	if (_cycleDirection != 0)
 	{
 		global.playerItemSlotEquipped += _cycleDirection;
-		if (global.playerItemSlotEquipped < 1) global.global.playerItemSlotEquipped = SLOT.TYPE_COUNT - 1;
+		if (global.playerItemSlotEquipped < 0) global.playerItemSlotEquipped = SLOT.TYPE_COUNT - 1;
 		if (global.playerItemSlotEquipped >= SLOT.TYPE_COUNT) global.playerItemSlotEquipped = SLOT.SLOT1;
 	}
 	
