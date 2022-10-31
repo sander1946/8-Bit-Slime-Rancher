@@ -11,3 +11,5 @@ entityDropList = choose
 	[oArrowDrop],
 	-1
 )
+
+placed_via_load = false
