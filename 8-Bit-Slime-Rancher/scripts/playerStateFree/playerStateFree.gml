@@ -101,7 +101,6 @@ function playerStateFree()
 		{
 			case ITEM.BOMB: useItemBomb();break;
 			case ITEM.BOW: useItemBow();break;
-			case ITEM.HOOK: useItemHook();break;
 			default: break;
 		}
 	}

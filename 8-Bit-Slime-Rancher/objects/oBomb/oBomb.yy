@@ -40,7 +40,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityThrowBreak","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"True",},
   ],
   "parent": {
-    "name": "entities",
-    "path": "folders/Objects/entities.yy",
+    "name": "items",
+    "path": "folders/Objects/entities/items.yy",
   },
 }

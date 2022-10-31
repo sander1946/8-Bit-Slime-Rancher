@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "entities",
-    "path": "folders/Objects/entities.yy",
+    "name": "NPC",
+    "path": "folders/Objects/entities/NPC.yy",
   },
 }

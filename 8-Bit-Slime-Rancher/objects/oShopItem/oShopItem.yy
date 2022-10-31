@@ -42,7 +42,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"False",},
   ],
   "parent": {
-    "name": "entities",
-    "path": "folders/Objects/entities.yy",
+    "name": "items",
+    "path": "folders/Objects/entities/items.yy",
   },
 }

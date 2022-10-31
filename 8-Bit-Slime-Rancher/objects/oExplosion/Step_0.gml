@@ -17,7 +17,7 @@ if (!global.gamePaused)
 				{
 					if (object_is_ancestor(object_index,pEnemy))
 					{
-						hurtEnemy(id,25,other.id,20);
+						hurtEnemy(id,25,other.id,10);
 					}
 					else
 					{

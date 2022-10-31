@@ -30,8 +30,3 @@ function playerFireArrow()
 		speed = 6;
 	}
 }
-
-function useItemHook()
-{
-	
-}

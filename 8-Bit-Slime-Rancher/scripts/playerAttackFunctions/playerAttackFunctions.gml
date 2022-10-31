@@ -74,6 +74,7 @@ function hurtEnemy(_enemy, _damage, _source, _knockback)
 			// hurt of dead?
 			if (enemyHP <= 0)
 			{
+				enemyHP = 0;
 				state = ENEMYSTATE.DIE;
 			}
 			else

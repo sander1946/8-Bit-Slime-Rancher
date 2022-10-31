@@ -4,7 +4,7 @@ state = ENEMYSTATE.WANDER;
 
 // Enemy Sprites
 sprMove = sBat;
-sprAttack = sBat;
+sprJump = sBat;
 sprDie = sBatDie;
 sprHurt = sBatHurt;
 

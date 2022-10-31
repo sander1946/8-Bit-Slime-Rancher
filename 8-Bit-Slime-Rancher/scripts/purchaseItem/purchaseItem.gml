@@ -11,7 +11,6 @@ function purchaseItem(_item, _amount, _cost)
 		{
 			case ITEM.BOMB: _desc = "press CTRL for boom and space to throw"; break;
 			case ITEM.BOW: _desc = "press CTRL to shoot"; break;
-			case ITEM.HOOK: _desc = "press NOONE to use"; break;
 			default: _desc = "no description found!"; break;
 		}
 		newTextBox(_desc, 1);

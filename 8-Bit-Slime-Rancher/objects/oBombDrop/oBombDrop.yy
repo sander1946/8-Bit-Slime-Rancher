@@ -35,7 +35,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"[ITEM.BOMB, 1]",},
   ],
   "parent": {
-    "name": "entities",
-    "path": "folders/Objects/entities.yy",
+    "name": "items",
+    "path": "folders/Objects/entities/items.yy",
   },
 }

@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "entities",
-    "path": "folders/Sprites/entities.yy",
+    "name": "liftables",
+    "path": "folders/Sprites/entities/liftables.yy",
   },
 }

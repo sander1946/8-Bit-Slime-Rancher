@@ -35,7 +35,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"value":"5",},
   ],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/entities/enemies.yy",
+    "name": "other",
+    "path": "folders/Objects/entities/other.yy",
   },
 }
