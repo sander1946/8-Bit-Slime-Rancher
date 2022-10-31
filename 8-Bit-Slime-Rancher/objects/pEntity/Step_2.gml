@@ -38,8 +38,10 @@ if (!global.gamePaused)
 			// fall back to eurth if z > 0
 			if (z > 0)
 			{
+				grav = 1.25;
 				z = max(0, (z - grav));
 				if (z == 0) && (entityThrowBreak) instance_destroy();
+				grav = 0.1;
 			}
 			else
 			{

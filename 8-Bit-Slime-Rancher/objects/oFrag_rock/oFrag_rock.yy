@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oFrag_rock",
+  "spriteId": {
+    "name": "sFrag_rock",
+    "path": "sprites/sFrag_rock/sFrag_rock.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": {
+    "name": "sFrag_rock",
+    "path": "sprites/sFrag_rock/sFrag_rock.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oFragment",
+    "path": "objects/oFragment/oFragment.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bounceCount","path":"objects/oFragment/oFragment.yy",},"objectId":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},"value":"1",},
+  ],
+  "parent": {
+    "name": "fragments",
+    "path": "folders/Objects/fragments.yy",
+  },
+}
