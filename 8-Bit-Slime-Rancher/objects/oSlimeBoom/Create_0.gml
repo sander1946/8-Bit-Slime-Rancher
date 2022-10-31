@@ -13,7 +13,7 @@ waitDuration = random_range(30,90);
 
 
 // enemy Scrips
-enemyScript[ENEMYSTATE.WANDER] = slimeWander;
+enemyScript[ENEMYSTATE.WANDER] = slimeJump;
 enemyScript[ENEMYSTATE.CHASE] = slimeChase;
 enemyScript[ENEMYSTATE.ATTACK] = slimeAttack;
 enemyScript[ENEMYSTATE.HURT] = slimeHurt;

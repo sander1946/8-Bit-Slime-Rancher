@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pEnemy",
-    "path": "objects/pEnemy/pEnemy.yy",
+    "name": "pSlime",
+    "path": "objects/pSlime/pSlime.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,9 +31,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"value":"25",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "slimes",
     "path": "folders/Objects/entities/slimes.yy",

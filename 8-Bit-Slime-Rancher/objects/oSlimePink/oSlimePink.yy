@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pEnemy",
-    "path": "objects/pEnemy/pEnemy.yy",
+    "name": "pSlime",
+    "path": "objects/pSlime/pSlime.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

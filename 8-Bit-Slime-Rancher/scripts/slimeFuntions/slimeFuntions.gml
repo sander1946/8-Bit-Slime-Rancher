@@ -108,7 +108,7 @@ function slimeAttack()
 	// how far we have to jump
 	var _distanceToGo = point_distance(x, y, xTo, yTo);
 	
-	// begin landing end of the animation onve we;re nearly done
+	// begin landing end of the animation onve we're nearly done
 	if (_distanceToGo < 4) && (image_index < 5) image_speed = 1.0;
 	
 	//move
@@ -135,6 +135,69 @@ function slimeAttack()
 			stateTarget = ENEMYSTATE.CHASE;
 			stateWaitDuration = 15;
 			state = ENEMYSTATE.WAIT;
+		}
+	}
+}
+
+
+function slimeJump()
+{
+	sprite_index = sprJump;
+	// at destination or given up?
+	if ((x == xTo) && (y == yTo)) || (timePassed > enemyWanderDistance / enemySpeed)
+	{
+		//begin landing end of the animation onve we're nearly done
+		if (image_index < 5) image_speed = 1.0;
+		
+		hSpeed = 0;
+		vSpeed = 0;
+		// End our move animation
+		if (image_index < 1)
+		{
+			image_speed = 0.0;
+			image_index = 0;
+		}
+		
+		// set new target destionation
+		if (++wait >= waitDuration)
+		{
+			wait = 0;
+			timePassed = 0;
+			dir = point_direction(x, y, xstart, ystart) + irandom_range(-180, 180);
+			xTo = x + lengthdir_x(enemyWanderDistance, dir);
+			yTo = y + lengthdir_y(enemyWanderDistance, dir);
+		}
+	}
+	else
+	{
+		// move towards new destination
+		timePassed++;
+		image_speed = 1.0;
+		
+		// how fast to move
+		var _spd = enemySpeed;
+		// dont move while stil getting ready to jump
+		if (image_index < 2) _spd = 0;
+		// frees animation while in air
+		if (floor(image_index) == 3) || (floor(image_index) == 5) image_speed = 0.0;
+		// how far we have to jump
+		var _distanceToGo = point_distance(x, y, xTo, yTo);
+		// begin landing end of the animation onve we're nearly done
+		if (_distanceToGo < 4) && (image_index < 5) image_speed = 1.0;
+		
+		if (_distanceToGo < enemySpeed) _spd = _distanceToGo;
+	
+		// move from attack
+		dir = point_direction(x, y, xTo, yTo);
+		hSpeed = lengthdir_x(_spd, dir);
+		vSpeed = lengthdir_y(_spd, dir);
+		if (hSpeed != 0) image_xscale = sign(hSpeed);
+		
+		// commit to move and stop if collision
+		if (enemyTileCollision() == true)
+		{
+			xTo = x
+			yTo = y
 		}
 	}
 }
