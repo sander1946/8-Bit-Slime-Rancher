@@ -101,6 +101,7 @@ function playerStateFree()
 		{
 			case ITEM.BOMB: useItemBomb();break;
 			case ITEM.BOW: useItemBow();break;
+			case ITEM.PINKPLORT: dropPlort(ITEM.PINKPLORT, oPlortPink);break;
 			default: break;
 		}
 	}

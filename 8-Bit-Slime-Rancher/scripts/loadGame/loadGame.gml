@@ -18,7 +18,6 @@ function loadGame(_slot)
 		// lists to attays
 		for (_i = 0; _i < ITEM.TYPE_COUNT; _i++;)
 		{
-			global.playerItemUnlocked[_i] = _json[? "playerItemUnlocked"][| _i];
 			global.playerAmmo[_i] = _json[? "playerAmmo"][| _i];
 		}
 		

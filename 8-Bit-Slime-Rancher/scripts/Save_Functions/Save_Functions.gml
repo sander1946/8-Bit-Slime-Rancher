@@ -12,6 +12,9 @@ function save_Room()
 	var _pinkSlimeNum = instance_number(oSlimePink);
 	var _boomSlimeNum = instance_number(oSlimeBoom);
 	
+	// plorts
+	var _pinkPlortNum = instance_number(oPlortPink);
+	
 	var _roomStruct = 
 	{
 		// coins
@@ -22,18 +25,31 @@ function save_Room()
 		bombData : array_create(_bombNum),
 		arrowNum : _arrowNum,
 		arrowData : array_create(_arrowNum),
-		
 		//slimes
 		pinkSlimeNum : _pinkSlimeNum,
 		pinkSlimeNumData : array_create(_pinkSlimeNum),
 		boomSlimeNum : _boomSlimeNum,
 		boomSlimeNumData : array_create(_boomSlimeNum),
+		// plorts
+		pinkPlortNum : _pinkPlortNum,
+		pinkPlortNumData : array_create(_pinkPlortNum),
 		
 	}
 	
 	// get the date for the diverent savable objects
 	
 	// coins
+	for (var _i = 0; _i < _coinNum; _i++)
+	{
+		var _inst = instance_find(oCoin, _i);
+		_roomStruct.coinData[_i] =
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	
+	// itemDrops
 	for (var _i = 0; _i < _bombNum; _i++)
 	{
 		var _inst = instance_find(oBombDrop, _i);
@@ -43,8 +59,6 @@ function save_Room()
 			y : _inst.y,
 		}
 	}
-	
-	// itemDrops
 	for (var _i = 0; _i < _arrowNum; _i++)
 	{
 		var _inst = instance_find(oArrowDrop, _i);
@@ -69,6 +83,17 @@ function save_Room()
 	{
 		var _inst = instance_find(oSlimeBoom, _i);
 		_roomStruct.boomSlimeNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	
+	// plorts
+	for (var _i = 0; _i < _pinkPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortPink, _i);
+		_roomStruct.pinkPlortNumData[_i] = 
 		{
 			x : _inst.x,
 			y : _inst.y,
@@ -126,5 +151,12 @@ function load_Room()
 	for (var _i = 0; _i < _roomStruct.boomSlimeNum; _i++)
 	{
 		instance_create_depth(_roomStruct.boomSlimeNumData[_i].x, _roomStruct.boomSlimeNumData[_i].y, layer, oSlimeBoom);
+	}
+	
+	// plorts
+	if (instance_exists(oPlortPink)) {instance_destroy(oPlortPink)}
+	for (var _i = 0; _i < _roomStruct.pinkPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.pinkPlortNumData[_i].x, _roomStruct.pinkPlortNumData[_i].y, layer, oPlortPink);
 	}
 }

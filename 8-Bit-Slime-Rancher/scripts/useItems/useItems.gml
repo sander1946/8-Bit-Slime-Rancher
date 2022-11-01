@@ -14,7 +14,6 @@ function useItemBow()
 	if (global.playerAmmo[ITEM.BOW] > 0) && (global.iLifted == noone)
 	{
 		invRemove(ITEM.BOW, 1)
-//		global.playerAmmo[ITEM.BOW]--;
 		playerActOutAnimation(sPlayerBow, playerFireArrow)
 	}
 }
@@ -28,5 +27,16 @@ function playerFireArrow()
 		image_speed = 0;
 		image_index = CARDIONAL_DIR;
 		speed = 6;
+	}
+}
+
+function dropPlort(_plortID, _ObjectID)
+{
+	var _array = [_ObjectID]
+	if (global.playerAmmo[ITEM.BOW] > 0) && (global.iLifted == noone)
+	{
+		invRemove(_plortID, 1)
+		dropItems(oPlayer.x, oPlayer.y, _array)
+		oPlortPink.droped = true;
 	}
 }

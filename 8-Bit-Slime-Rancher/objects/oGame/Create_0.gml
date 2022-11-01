@@ -22,13 +22,13 @@ global.playerItemSlotEquipped = SLOT.SLOT1;
 global.playerItemSlot[SLOT.SLOT0] = -1;
 global.playerItemSlot[SLOT.SLOT1] = ITEM.BOW;
 global.playerItemSlot[SLOT.SLOT2] = ITEM.BOMB;
-global.playerItemSlot[SLOT.SLOT3] = ITEM.NONE;
+global.playerItemSlot[SLOT.SLOT3] = ITEM.PINKPLORT;
 global.playerItemSlot[SLOT.SLOT4] = ITEM.NONE;
 
 global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1);
-global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
 global.playerAmmo[ITEM.BOMB] = 2;
 global.playerAmmo[ITEM.BOW] = 2;
+global.playerAmmo[ITEM.PINKPLORT] = 0;
 
 global.questStatus = ds_map_create();
 global.questStatus[? "TheHatQuest"] = 0;

@@ -26,6 +26,7 @@ enum ITEM
 	NONE,
 	BOMB,
 	BOW,
+	PINKPLORT,
 	TYPE_COUNT
 }
 enum SLOT

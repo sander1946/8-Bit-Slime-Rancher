@@ -18,7 +18,7 @@ function invRemove(_item, _amount)
 	if (_slot != ITEM.NONE)
 	{
 		// check is it even has ammo
-		if (global.playerAmmo != -1)
+		if (global.playerAmmo[_item] != -1)
 		{
 			// check is we have the ammount of items to remove
 			if (_amount < global.playerAmmo[_item])

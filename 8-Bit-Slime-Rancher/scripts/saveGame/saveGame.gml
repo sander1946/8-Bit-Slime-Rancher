@@ -9,7 +9,6 @@ function saveGame()
 	_map[? "playerMoney"] = global.playerMoney;
 	_map[? "playerItemSlot"] = global.playerItemSlot;
 	_map[? "playerItemSlotEquipped"] = global.playerItemSlotEquipped;
-	_map[? "playerItemUnlocked"] = global.playerItemUnlocked;
 	_map[? "playerAmmo"] = global.playerAmmo;
 	_map[? "targetX"] = global.targetX;
 	_map[? "targetY"] = global.targetY;
