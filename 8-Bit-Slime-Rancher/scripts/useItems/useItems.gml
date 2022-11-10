@@ -33,7 +33,7 @@ function playerFireArrow()
 function dropPlort(_plortID, _ObjectID)
 {
 	var _array = [_ObjectID]
-	if (global.playerAmmo[ITEM.BOW] > 0) && (global.iLifted == noone)
+	if (global.playerAmmo[_plortID] > 0) && (global.iLifted == noone)
 	{
 		invRemove(_plortID, 1)
 		dropItems(oPlayer.x, oPlayer.y, _array)
