@@ -29,7 +29,6 @@ global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1);
 global.playerAmmo[ITEM.BOMB] = 2;
 global.playerAmmo[ITEM.BOW] = 2;
 global.playerAmmo[ITEM.PINKPLORT] = 0;
-global.playerAmmo[ITEM.STAWBERRY] = 0;
 
 global.questStatus = ds_map_create();
 global.questStatus[? "TheHatQuest"] = 0;
