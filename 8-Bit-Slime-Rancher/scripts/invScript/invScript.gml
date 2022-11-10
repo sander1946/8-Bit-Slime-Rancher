@@ -1,6 +1,6 @@
 function invSearch(_item)
 {
-	for (var _i = 0; _i < 4; _i += 1)
+	for (var _i = 0; _i < 5; _i += 1)
 	{
 		if (global.playerItemSlot[_i] == _item)
 		{
