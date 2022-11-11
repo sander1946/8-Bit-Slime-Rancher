@@ -27,12 +27,6 @@ function attackSlash()
 }
 
 
-function attackSpin()
-{
-	
-}
-
-
 function calcAttack(_mask)
 {
 	// use attack hitbox & check for hits
