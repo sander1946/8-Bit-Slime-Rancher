@@ -67,7 +67,6 @@ function invAdd(_item, _amount)
 	{
 		// if we do add the ammount to the item
 		global.playerAmmo[_item] += _amount;
-		return(true);
 	}
 	else
 	{
@@ -78,13 +77,11 @@ function invAdd(_item, _amount)
 			// if so add item to it
 			global.playerItemSlot[_slot] = _item;
 			global.playerAmmo[_item] += _amount;
-			return(true);
 		}
 		else
 		{
 			// if not so send error message
-			show_debug_message("no inv space");
-			return(false);
+			show_debug_message("no inv space")
 		}
 	}
 }
