@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"value":"25",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dropType","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"ITEM.PINKPLORT",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dropType","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"oPlortPink",},
   ],
   "parent": {
     "name": "slimes",

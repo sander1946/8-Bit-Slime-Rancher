@@ -191,6 +191,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"entities","folderPath":"folders/Objects/entities.yy","order":4,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"food","folderPath":"folders/Objects/entities/food.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"items","folderPath":"folders/Objects/entities/items.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"liftables","folderPath":"folders/Objects/entities/liftables.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC","folderPath":"folders/Objects/entities/NPC.yy","order":7,},
@@ -233,7 +234,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"world","folderPath":"folders/Sprites/world.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":5,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"food","folderPath":"folders/Objects/entities/food.yy","order":9,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
