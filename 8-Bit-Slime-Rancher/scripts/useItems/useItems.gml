@@ -37,6 +37,6 @@ function dropPlort(_plortID, _ObjectID)
 	{
 		invRemove(_plortID, 1)
 		dropItems(oPlayer.x, oPlayer.y, _array)
-		oPlortPink.droped = true;
+		_ObjectID.droped = true;
 	}
 }
