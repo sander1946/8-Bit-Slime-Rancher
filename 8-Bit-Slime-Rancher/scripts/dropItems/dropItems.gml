@@ -23,5 +23,4 @@ function dropItems(_x, _y, _items_array)
 	{
 		instance_create_layer(_x, _y, "Instances", _items_array[0]);
 	}
-	
 }

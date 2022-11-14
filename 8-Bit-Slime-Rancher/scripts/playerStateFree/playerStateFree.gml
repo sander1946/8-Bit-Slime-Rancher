@@ -97,14 +97,7 @@ function playerStateFree()
 	}
 	if (keyItem) && (!keyActivate) && (global.playerItemSlot[global.playerItemSlotEquipped] != ITEM.NONE)
 	{
-		switch (global.playerItemSlot[global.playerItemSlotEquipped])
-		{
-			case ITEM.BOMB: useItemBomb();break;
-			case ITEM.BOW: useItemBow();break;
-			case ITEM.PINKPLORT: dropPlort(ITEM.PINKPLORT, oPlortPink);break;
-			case ITEM.STAWBERRY: dropPlort(ITEM.STAWBERRY, oStrawberry);break;
-			default: break;
-		}
+		itemSwitch()
 	}
 	
 	// cycle items
