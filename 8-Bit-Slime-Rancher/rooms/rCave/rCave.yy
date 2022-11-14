@@ -70,7 +70,7 @@
 2,2,36,-3,0,4,16,47,47,24,-6,0,1,16,-5,47,1,24,-3,0,
 11,16,47,47,2,20,36,0,0,34,20,1,-5,47,1,24,-3,0,1,16,
 -4,47,4,2,20,20,1,-7,47,1,24,-3,0,1,16,-15,47,1,24,-3,
-0,1,16,-12,47,],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+0,1,16,-12,47,],},"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"TilesLower","tilesetId":{"name":"tTilesCave","path":"tilesets/tTilesCave/tTilesCave.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":45,"TileCompressedData":[
 -344,-2147483648,1,48,-3,49,-2,50,-14,-2147483648,1,56,-3,57,-2,58,-14,-2147483648,1,64,
 -3,65,-2,66,-138,-2147483648,5,50,0,48,49,49,-15,-2147483648,5,58,0,56,57,57,
@@ -78,7 +78,7 @@
 -2147483648,-2,49,2,50,0,-3,49,-4,-2147483648,2,0,56,-3,57,-4,-2147483648,-2,57,2,
 58,0,-3,57,-4,-2147483648,2,0,64,-3,65,-4,-2147483648,-2,65,2,66,0,-3,65,
 -161,-2147483648,],},"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4283919505,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4283919505,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
   "creationCodeFile": "",

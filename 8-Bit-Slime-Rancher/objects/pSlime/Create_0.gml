@@ -1,5 +1,7 @@
 event_inherited();
 
+collisionMap = layer_tilemap_get_id(layer_get_id("ColSlimes"));
+
 // intrinsic variables
 state = ENEMYSTATE.IDLE;
 hSpeed = 0;
@@ -28,6 +30,8 @@ enemyScript[ENEMYSTATE.ATTACK] = -1;
 enemyScript[ENEMYSTATE.HURT] = -1;
 enemyScript[ENEMYSTATE.DIE] = -1;
 enemyScript[ENEMYSTATE.WAIT] = EnemyWait;
+
+
 
 
 
