@@ -31,7 +31,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dropType","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"oPlortBoom",},
+  ],
   "parent": {
     "name": "slimes",
     "path": "folders/Objects/entities/slimes.yy",

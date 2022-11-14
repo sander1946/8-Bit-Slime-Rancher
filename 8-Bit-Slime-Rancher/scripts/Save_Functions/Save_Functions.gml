@@ -11,9 +11,16 @@ function save_Room()
 	// slimes
 	var _pinkSlimeNum = instance_number(oSlimePink);
 	var _boomSlimeNum = instance_number(oSlimeBoom);
+	var _tabbySlimeNum = instance_number(oSlimeTabby);
+	var _radSlimeNum = instance_number(oSlimeRad);
+	var _honeySlimeNum = instance_number(oSlimeHoney);
 	
 	// plorts
 	var _pinkPlortNum = instance_number(oPlortPink);
+	var _boomPlortNum = instance_number(oPlortBoom);
+	var _tabbyPlortNum = instance_number(oPlortTabby);
+	var _radPlortNum = instance_number(oPlortRad);
+	var _honeyPlortNum = instance_number(oPlortHoney);
 	
 	var _roomStruct = 
 	{
@@ -30,10 +37,23 @@ function save_Room()
 		pinkSlimeNumData : array_create(_pinkSlimeNum),
 		boomSlimeNum : _boomSlimeNum,
 		boomSlimeNumData : array_create(_boomSlimeNum),
+		tabbySlimeNum : _tabbySlimeNum,
+		tabbySlimeNumData : array_create(_tabbySlimeNum),
+		radSlimeNum : _radSlimeNum,
+		radSlimeNumData : array_create(_radSlimeNum),
+		honeySlimeNum : _honeySlimeNum,
+		honeySlimeNumData : array_create(_honeySlimeNum),
 		// plorts
 		pinkPlortNum : _pinkPlortNum,
 		pinkPlortNumData : array_create(_pinkPlortNum),
-		
+		boomPlortNum : _boomPlortNum,
+		boomPlortNumData : array_create(_boomPlortNum),
+		tabbyPlortNum : _tabbyPlortNum,
+		tabbyPlortNumData : array_create(_tabbyPlortNum),
+		radPlortNum : _radPlortNum,
+		radPlortNumData : array_create(_radPlortNum),
+		honeyPlortNum : _honeyPlortNum,
+		honeyPlortNumData : array_create(_honeyPlortNum),
 	}
 	
 	// get the date for the diverent savable objects
@@ -88,12 +108,75 @@ function save_Room()
 			y : _inst.y,
 		}
 	}
+	for (var _i = 0; _i < _tabbySlimeNum; _i++)
+	{
+		var _inst = instance_find(oSlimeTabby, _i);
+		_roomStruct.tabbySlimeNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _radSlimeNum; _i++)
+	{
+		var _inst = instance_find(oSlimeRad, _i);
+		_roomStruct.radSlimeNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _honeySlimeNum; _i++)
+	{
+		var _inst = instance_find(oSlimeHoney, _i);
+		_roomStruct.honeySlimeNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
 	
 	// plorts
 	for (var _i = 0; _i < _pinkPlortNum; _i++)
 	{
 		var _inst = instance_find(oPlortPink, _i);
 		_roomStruct.pinkPlortNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _boomPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortBoom, _i);
+		_roomStruct.boomPlortNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _tabbyPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortTabby, _i);
+		_roomStruct.tabbyPlortNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _radPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortRad, _i);
+		_roomStruct.radPlortNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _honeyPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortHoney, _i);
+		_roomStruct.honeyPlortNumData[_i] = 
 		{
 			x : _inst.x,
 			y : _inst.y,
