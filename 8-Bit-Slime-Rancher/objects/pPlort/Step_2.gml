@@ -2,7 +2,7 @@ flash = max(0, flash-0.05);
 fric = 0.05;
 if (z == 0) fric = 0.10;
 
-// magnetise to player
+// magnetise
 if (instance_exists(oPlayer))
 {
 	var _px = oPlayer.x;

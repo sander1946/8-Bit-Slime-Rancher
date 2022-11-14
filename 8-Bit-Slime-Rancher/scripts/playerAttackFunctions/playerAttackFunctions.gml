@@ -13,7 +13,6 @@ function attackSlash()
 		ds_list_clear(hitByAttack);
 		
 	}
-	
 	calcAttack(sPlayerAttackSlashHB);
 	
 	// update sprite
@@ -24,12 +23,6 @@ function attackSlash()
 		state = playerStateFree;
 		animationEnd = false;
 	}
-}
-
-
-function attackSpin()
-{
-	
 }
 
 
