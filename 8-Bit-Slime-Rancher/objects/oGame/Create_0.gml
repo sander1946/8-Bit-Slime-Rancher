@@ -20,15 +20,19 @@ global.playerItemSlot = array_create(SLOT.TYPE_COUNT, -1);
 global.playerItemSlotEquipped = SLOT.SLOT1;
 
 global.playerItemSlot[SLOT.SLOT0] = -1;
-global.playerItemSlot[SLOT.SLOT1] = ITEM.BOW;
-global.playerItemSlot[SLOT.SLOT2] = ITEM.BOMB;
+global.playerItemSlot[SLOT.SLOT1] = ITEM.NONE;
+global.playerItemSlot[SLOT.SLOT2] = ITEM.NONE;
 global.playerItemSlot[SLOT.SLOT3] = ITEM.NONE;
 global.playerItemSlot[SLOT.SLOT4] = ITEM.NONE;
 
 global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1);
-global.playerAmmo[ITEM.BOMB] = 2;
-global.playerAmmo[ITEM.BOW] = 2;
+global.playerAmmo[ITEM.BOMB] = 0;
+global.playerAmmo[ITEM.BOW] = 0;
 global.playerAmmo[ITEM.PINKPLORT] = 0;
+global.playerAmmo[ITEM.BOOMPLORT] = 0;
+global.playerAmmo[ITEM.TABBYPLORT] = 0;
+global.playerAmmo[ITEM.RADPLORT] = 0;
+global.playerAmmo[ITEM.HONEYPLORT] = 0;
 global.playerAmmo[ITEM.STAWBERRY] = 0;
 
 global.questStatus = ds_map_create();
