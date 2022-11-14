@@ -22,6 +22,9 @@ function save_Room()
 	var _radPlortNum = instance_number(oPlortRad);
 	var _honeyPlortNum = instance_number(oPlortHoney);
 	
+	// fruits
+	var _strawberryNum = instance_number(oStrawberry);
+	
 	var _roomStruct = 
 	{
 		// coins
@@ -54,6 +57,9 @@ function save_Room()
 		radPlortNumData : array_create(_radPlortNum),
 		honeyPlortNum : _honeyPlortNum,
 		honeyPlortNumData : array_create(_honeyPlortNum),
+		// fruits
+		strawberryNum : _strawberryNum,
+		strawberryNumData : array_create(_strawberryNum),
 	}
 	
 	// get the date for the diverent savable objects
@@ -183,6 +189,17 @@ function save_Room()
 		}
 	}
 	
+	// fruits
+	for (var _i = 0; _i < _strawberryNum; _i++)
+	{
+		var _inst = instance_find(oStrawberry, _i);
+		_roomStruct.strawberryNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	
 	
 	// store the room specific struct in global.levelData's variables meany for that level
 	if room == rVillage {global.levelData.Room_Village = _roomStruct;};
@@ -277,4 +294,11 @@ function load_Room()
 	{
 		instance_create_depth(_roomStruct.honeyPlortNumData[_i].x, _roomStruct.honeyPlortNumData[_i].y, layer, oPlortHoney);
 	}
+	
+	// fruits
+	if (instance_exists(oStrawberry)) {instance_destroy(oStrawberry)}
+	for (var _i = 0; _i < _roomStruct.strawberryNum; _i++)
+	{
+		instance_create_depth(_roomStruct.strawberryNumData[_i].x, _roomStruct.strawberryNumData[_i].y, layer, oStrawberry);
+	}	
 }

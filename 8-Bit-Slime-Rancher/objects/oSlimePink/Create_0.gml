@@ -9,7 +9,7 @@ sprDie = sSlimePinkDie;
 sprHurt = sSlimePinkHurt;
 
 // add randomnes
-waitDuration = random_range(30,90);
+waitDuration = random_range(60,120);
 
 
 // enemy Scrips
