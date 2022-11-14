@@ -243,12 +243,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC","folderPath":"folders/Sprites/entities/NPC.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"other","folderPath":"folders/Sprites/entities/other.yy","order":5,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"plants","folderPath":"folders/Sprites/entities/plants.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"plorts","folderPath":"folders/Sprites/entities/plorts.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"slimes","folderPath":"folders/Sprites/entities/slimes.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"world","folderPath":"folders/Sprites/world.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":5,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"plorts","folderPath":"folders/Sprites/entities/plorts.yy","order":4,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

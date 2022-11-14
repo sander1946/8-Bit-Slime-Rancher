@@ -235,11 +235,46 @@ function load_Room()
 	{
 		instance_create_depth(_roomStruct.boomSlimeNumData[_i].x, _roomStruct.boomSlimeNumData[_i].y, layer, oSlimeBoom);
 	}
+	if (instance_exists(oSlimeTabby)) {instance_destroy(oSlimeTabby)}
+	for (var _i = 0; _i < _roomStruct.tabbySlimeNum; _i++)
+	{
+		instance_create_depth(_roomStruct.tabbySlimeNumData[_i].x, _roomStruct.tabbySlimeNumData[_i].y, layer, oSlimeTabby);
+	}
+	if (instance_exists(oSlimeRad)) {instance_destroy(oSlimeRad)}
+	for (var _i = 0; _i < _roomStruct.radSlimeNum; _i++)
+	{
+		instance_create_depth(_roomStruct.radSlimeNumData[_i].x, _roomStruct.radSlimeNumData[_i].y, layer, oSlimeRad);
+	}
+	if (instance_exists(oSlimeHoney)) {instance_destroy(oSlimeHoney)}
+	for (var _i = 0; _i < _roomStruct.honeySlimeNum; _i++)
+	{
+		instance_create_depth(_roomStruct.honeySlimeNumData[_i].x, _roomStruct.honeySlimeNumData[_i].y, layer, oSlimeHoney);
+	}
 	
 	// plorts
 	if (instance_exists(oPlortPink)) {instance_destroy(oPlortPink)}
 	for (var _i = 0; _i < _roomStruct.pinkPlortNum; _i++)
 	{
 		instance_create_depth(_roomStruct.pinkPlortNumData[_i].x, _roomStruct.pinkPlortNumData[_i].y, layer, oPlortPink);
+	}
+	if (instance_exists(oPlortBoom)) {instance_destroy(oPlortBoom)}
+	for (var _i = 0; _i < _roomStruct.boomPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.boomPlortNumData[_i].x, _roomStruct.boomPlortNumData[_i].y, layer, oPlortBoom);
+	}
+	if (instance_exists(oPlortTabby)) {instance_destroy(oPlortTabby)}
+	for (var _i = 0; _i < _roomStruct.tabbyPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.tabbyPlortNumData[_i].x, _roomStruct.tabbyPlortNumData[_i].y, layer, oPlortTabby);
+	}
+	if (instance_exists(oPlortRad)) {instance_destroy(oPlortRad)}
+	for (var _i = 0; _i < _roomStruct.radPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.radPlortNumData[_i].x, _roomStruct.radPlortNumData[_i].y, layer, oPlortRad);
+	}
+	if (instance_exists(oPlortHoney)) {instance_destroy(oPlortHoney)}
+	for (var _i = 0; _i < _roomStruct.honeyPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.honeyPlortNumData[_i].x, _roomStruct.honeyPlortNumData[_i].y, layer, oPlortHoney);
 	}
 }
