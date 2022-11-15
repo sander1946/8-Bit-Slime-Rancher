@@ -35,6 +35,15 @@ global.playerAmmo[ITEM.RADPLORT] = 0;
 global.playerAmmo[ITEM.HONEYPLORT] = 0;
 global.playerAmmo[ITEM.STAWBERRY] = 0;
 
+// prices
+global.plortPrice = array_create(ITEM.TYPE_COUNT, -1);
+
+global.plortPrice[ITEM.PINKPLORT] = 1;
+global.plortPrice[ITEM.BOOMPLORT] = 2;
+global.plortPrice[ITEM.TABBYPLORT] = 3;
+global.plortPrice[ITEM.RADPLORT] = 4;
+global.plortPrice[ITEM.HONEYPLORT] = 5; 
+
 global.questStatus = ds_map_create();
 global.questStatus[? "TheHatQuest"] = 0;
 

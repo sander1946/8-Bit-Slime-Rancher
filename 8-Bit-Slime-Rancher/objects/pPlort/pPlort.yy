@@ -1,19 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPlortBoom",
-  "spriteId": {
-    "name": "sPlortBoom",
-    "path": "sprites/sPlortBoom/sPlortBoom.yy",
-  },
+  "name": "pPlort",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pPlort",
-    "path": "objects/pPlort/pPlort.yy",
+    "name": "pCollectable",
+    "path": "objects/pCollectable/pCollectable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,12 +26,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"droped","varType":3,"value":"false","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"False",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScript","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"collectAmmo",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"[ITEM.BOOMPLORT, 1]",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"[ITEM.PINKPLORT, 1]",},
   ],
   "parent": {
     "name": "plorts",

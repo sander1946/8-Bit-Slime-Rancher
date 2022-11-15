@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pCollectable",
-    "path": "objects/pCollectable/pCollectable.yy",
+    "name": "pPlort",
+    "path": "objects/pPlort/pPlort.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,9 +30,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"droped","varType":3,"value":"false","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"False",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScript","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"collectAmmo",},
