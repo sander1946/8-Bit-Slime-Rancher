@@ -87,6 +87,7 @@
     {"id":{"name":"sSlimePinkHurt","path":"sprites/sSlimePinkHurt/sSlimePinkHurt.yy",},"order":1,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":2,},
     {"id":{"name":"sSlimeTabbyDie","path":"sprites/sSlimeTabbyDie/sSlimeTabbyDie.yy",},"order":21,},
+    {"id":{"name":"tSlimePen","path":"tilesets/tSlimePen/tSlimePen.yy",},"order":3,},
     {"id":{"name":"useItems","path":"scripts/useItems/useItems.yy",},"order":7,},
     {"id":{"name":"nineSliceBoxStretched","path":"scripts/nineSliceBoxStretched/nineSliceBoxStretched.yy",},"order":1,},
     {"id":{"name":"purchaseItem","path":"scripts/purchaseItem/purchaseItem.yy",},"order":7,},
