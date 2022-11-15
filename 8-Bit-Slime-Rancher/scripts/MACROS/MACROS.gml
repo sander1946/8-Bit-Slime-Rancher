@@ -41,3 +41,12 @@ enum SLOT
 	SLOT4,
 	TYPE_COUNT
 }
+enum PENS
+{
+	PEN_A,
+	PEN_B,
+	PEN_C,
+	PEN_D,
+	PEN_E,	
+	TYPE_COUNT
+}
