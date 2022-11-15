@@ -26,8 +26,6 @@ global.playerItemSlot[SLOT.SLOT3] = ITEM.NONE;
 global.playerItemSlot[SLOT.SLOT4] = ITEM.NONE;
 
 global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1);
-global.playerAmmo[ITEM.BOMB] = 0;
-global.playerAmmo[ITEM.BOW] = 0;
 global.playerAmmo[ITEM.PINKPLORT] = 0;
 global.playerAmmo[ITEM.BOOMPLORT] = 0;
 global.playerAmmo[ITEM.TABBYPLORT] = 0;

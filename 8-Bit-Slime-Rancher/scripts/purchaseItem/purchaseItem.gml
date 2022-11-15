@@ -9,8 +9,6 @@ function purchaseItem(_item, _amount, _cost)
 		var _desc = "";
 		switch (_item)
 		{
-			case ITEM.BOMB: _desc = "press CTRL for boom and space to throw"; break;
-			case ITEM.BOW: _desc = "press CTRL to shoot"; break;
 			default: _desc = "no description found!"; break;
 		}
 		newTextBox(_desc, 1);

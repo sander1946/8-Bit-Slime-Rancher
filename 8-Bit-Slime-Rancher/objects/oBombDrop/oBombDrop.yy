@@ -32,7 +32,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"False",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScript","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"collectAmmo",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"[ITEM.BOMB, 1]",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"value":"[ITEM.PINKPLORT, 1]",},
   ],
   "parent": {
     "name": "items",

@@ -15,8 +15,6 @@ if (instance_exists(oSellPoint))
 			_item = collectScriptArg[0];
 			switch (_item)
 			{
-				case ITEM.BOMB: break;
-				case ITEM.BOW: break;
 				case ITEM.PINKPLORT: collectCoins(global.plortPrice[ITEM.PINKPLORT]);instance_destroy();break;
 				case ITEM.BOOMPLORT: collectCoins(global.plortPrice[ITEM.BOOMPLORT]);instance_destroy();break;
 				case ITEM.TABBYPLORT: collectCoins(global.plortPrice[ITEM.TABBYPLORT]);instance_destroy();break;
