@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSellPoint",
+  "name": "oSellPointBG",
   "spriteId": {
-    "name": "sSellPoint",
-    "path": "sprites/sSellPoint/sSellPoint.yy",
+    "name": "sSellPointBG",
+    "path": "sprites/sSellPointBG/sSellPointBG.yy",
   },
   "solid": false,
   "visible": true,
