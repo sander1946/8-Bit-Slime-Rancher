@@ -48,6 +48,7 @@
     {"id":{"name":"oRoof","path":"objects/oRoof/oRoof.yy",},"order":3,},
     {"id":{"name":"Save_Functions","path":"scripts/Save_Functions/Save_Functions.yy",},"order":1,},
     {"id":{"name":"playerStateAct","path":"scripts/playerStateAct/playerStateAct.yy",},"order":6,},
+    {"id":{"name":"oPenManager","path":"objects/oPenManager/oPenManager.yy",},"order":4,},
     {"id":{"name":"oSellPoint","path":"objects/oSellPoint/oSellPoint.yy",},"order":8,},
     {"id":{"name":"sCoin_UI","path":"sprites/sCoin_UI/sCoin_UI.yy",},"order":1,},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":0,},

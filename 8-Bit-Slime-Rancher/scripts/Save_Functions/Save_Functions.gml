@@ -301,4 +301,8 @@ function load_Room()
 	{
 		instance_create_depth(_roomStruct.strawberryNumData[_i].x, _roomStruct.strawberryNumData[_i].y, layer, oStrawberry);
 	}	
+	
+	
+	// slimePen
+	
 }
