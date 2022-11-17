@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSellPointBG",
-  "spriteId": {
-    "name": "sSellPointBG",
-    "path": "sprites/sSellPointBG/sSellPointBG.yy",
-  },
+  "name": "oSellScreen",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -30,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "other",
-    "path": "folders/Objects/world/other.yy",
+    "name": "managers",
+    "path": "folders/Objects/managers.yy",
   },
 }
