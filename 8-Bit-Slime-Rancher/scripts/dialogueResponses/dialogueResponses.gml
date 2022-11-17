@@ -14,7 +14,7 @@ function dialogueResponses(_response)
 			global.questStatus[? "TheHatQuest"] = 1;
 		} break;
 		case 5: newTextBox(":(", 2); break;
-		case 6: purchaseItem(activate.item, activate.itemAmount, activate.itemCost); break; 
+		case 6: purchaseItem(activate.item, activate.itemAmount, activate.itemCost, activate.type, activate.id); break; 
 		default: break;
 	}
 }
