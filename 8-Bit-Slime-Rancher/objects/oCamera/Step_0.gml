@@ -9,8 +9,8 @@ if (instance_exists(follow))
 }
 
 // update object position
-x += (xTo - x) / 15;
-y += (yTo - y) / 15;
+x += (xTo - x) / 2;
+y += (yTo - y) / 2;
 
 // keep cametra center inside room
 x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);
