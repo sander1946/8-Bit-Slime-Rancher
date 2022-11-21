@@ -48,6 +48,6 @@ enum PENS
 	PEN_B,
 	PEN_C,
 	PEN_D,
-	PEN_E,	
+	PEN_E,
 	TYPE_COUNT
 }
