@@ -62,6 +62,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetX","path":"objects/oRoomExit/oRoomExit.yy",},"objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"value":"88",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/oRoomExit/oRoomExit.yy",},"objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"value":"rCave",},
           ],"isDnd":false,"objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":88.0,"y":20.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_543DC270","properties":[],"isDnd":false,"objectId":{"name":"oBoulder","path":"objects/oBoulder/oBoulder.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74F950D1","properties":[],"isDnd":false,"objectId":{"name":"oBoulderShadow","path":"objects/oBoulderShadow/oBoulderShadow.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":216.0,"y":24.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_498CFA16","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item","path":"objects/oSignpost/oSignpost.yy",},"objectId":{"name":"oSignpost","path":"objects/oSignpost/oSignpost.yy",},"value":"0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"canBuyMultiple","path":"objects/oSignpost/oSignpost.yy",},"objectId":{"name":"oSignpost","path":"objects/oSignpost/oSignpost.yy",},"value":"False",},
@@ -179,6 +181,8 @@
     {"name":"inst_785CED1C_1","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_4FBD7C68","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_3E2CCC92","path":"rooms/rRiver/rRiver.yy",},
+    {"name":"inst_543DC270","path":"rooms/rRiver/rRiver.yy",},
+    {"name":"inst_74F950D1","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_498CFA16","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_D316F45","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_50BCC7F1","path":"rooms/rRiver/rRiver.yy",},
