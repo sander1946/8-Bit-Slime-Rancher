@@ -12,4 +12,3 @@ entityDropList = choose
 	-1
 )
 
-placed_via_load = false

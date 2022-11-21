@@ -25,6 +25,9 @@ function save_Room()
 	// fruits
 	var _strawberryNum = instance_number(oStrawberry);
 	
+	// signs
+	var _signNum = instance_number(oSignpost);
+	
 	var _roomStruct = 
 	{
 		// coins
@@ -60,6 +63,9 @@ function save_Room()
 		// fruits
 		strawberryNum : _strawberryNum,
 		strawberryNumData : array_create(_strawberryNum),
+		// signs
+		signNum : _signNum,
+		signNumData : array_create(_signNum),
 	}
 	
 	// get the date for the diverent savable objects
@@ -200,6 +206,24 @@ function save_Room()
 		}
 	}
 	
+	// signs
+	for (var _i = 0; _i < _signNum; _i++)
+	{
+		var _inst = instance_find(oSignpost, _i);
+		_roomStruct.signNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+			entityActivateScript : _inst.entityActivateScript,
+			entityActivateArgs : _inst.entityActivateArgs,
+			item : _inst.item,
+			canBuyMultiple : _inst.canBuyMultiple,
+			itemCost : _inst.itemCost,
+			itemAmount : _inst.itemAmount,
+			type : _inst.type,
+			
+		}
+	}
 	
 	// store the room specific struct in global.levelData's variables meany for that level
 	if room == rVillage {global.levelData.Room_Village = _roomStruct;};
@@ -302,7 +326,20 @@ function load_Room()
 		instance_create_depth(_roomStruct.strawberryNumData[_i].x, _roomStruct.strawberryNumData[_i].y, layer, oStrawberry);
 	}	
 	
-	
-	// slimePen
+	// signs
+	if (instance_exists(oSignpost)) {instance_destroy(oSignpost)}
+	for (var _i = 0; _i < _roomStruct.signNum; _i++)
+	{
+		with(instance_create_depth(_roomStruct.signNumData[_i].x, _roomStruct.signNumData[_i].y, layer, oSignpost))
+		{
+			entityActivateScript = _roomStruct.signNumData[_i].entityActivateScript;
+			entityActivateArgs = _roomStruct.signNumData[_i].entityActivateArgs;
+			item = _roomStruct.signNumData[_i].item;
+			canBuyMultiple = _roomStruct.signNumData[_i].canBuyMultiple;
+			itemCost = _roomStruct.signNumData[_i].itemCost;
+			itemAmount = _roomStruct.signNumData[_i].itemAmount;
+			type = _roomStruct.signNumData[_i].type;
+		}
+	}	
 	
 }

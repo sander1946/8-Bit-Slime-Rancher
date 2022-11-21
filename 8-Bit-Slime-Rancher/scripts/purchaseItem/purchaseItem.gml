@@ -1,4 +1,4 @@
-function purchaseItem(_item, _amount, _cost, _type="Item", _deleteid)
+function purchaseItem(_item, _amount, _cost, _type="Item", _deleteid=-1)
 {
 	if (global.playerMoney >= _cost)
 	{
@@ -17,15 +17,20 @@ function purchaseItem(_item, _amount, _cost, _type="Item", _deleteid)
 		}
 		else
 		{
-			var _SlimePen = "SlimePenA";
-			global.slimePen[_type] = true;
-			if(_type == PENS.PEN_A){_SlimePen = "SlimePenA";}
-			if(_type == PENS.PEN_B){_SlimePen = "SlimePenB";}
-			if(_type == PENS.PEN_C){_SlimePen = "SlimePenC";}
-			if(_type == PENS.PEN_D){_SlimePen = "SlimePenD";}
-			if(_type == PENS.PEN_E){_SlimePen = "SlimePenE";}
-			layer_set_visible(_SlimePen,global.slimePen[_type]);
-			instance_destroy(_deleteid);
+			global.playerMoney -= _cost;
+			switch (_type)
+			{
+				case PENS.PEN_A: layer_set_visible("SlimePenA", true); global.slimePen[PENS.PEN_A] = true; break;
+				case PENS.PEN_B: layer_set_visible("SlimePenB", true); global.slimePen[PENS.PEN_B] = true; break;
+				case PENS.PEN_C: layer_set_visible("SlimePenC", true); global.slimePen[PENS.PEN_C] = true; break;
+				case PENS.PEN_D: layer_set_visible("SlimePenD", true); global.slimePen[PENS.PEN_D] = true; break;
+				case PENS.PEN_E: layer_set_visible("SlimePenE", true); global.slimePen[PENS.PEN_E] = true; break;
+				default: break;
+			}
+			if (_deleteid != -1)
+			{
+				instance_destroy(_deleteid);
+			}
 		}
 	}
 	else
