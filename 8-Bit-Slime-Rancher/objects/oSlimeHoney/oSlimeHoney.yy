@@ -34,6 +34,8 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"value":"25",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dropType","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"oPlortHoney",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScript","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"collectAmmo",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"[ITEM.HONEYSLIME, 1]",},
   ],
   "parent": {
     "name": "slimes",

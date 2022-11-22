@@ -33,6 +33,8 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dropType","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"oPlortBoom",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScript","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"collectAmmo",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collectScriptArg","path":"objects/pSlime/pSlime.yy",},"objectId":{"name":"pSlime","path":"objects/pSlime/pSlime.yy",},"value":"[ITEM.BOOMSLIME, 1]",},
   ],
   "parent": {
     "name": "slimes",

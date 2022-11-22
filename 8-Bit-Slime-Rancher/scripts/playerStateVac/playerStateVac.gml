@@ -66,6 +66,14 @@ function vacume()
 						y += vSpeed;
 						if (_dist < 10) // collect radius
 						{
+							if (collectScriptArg != -1)
+							{
+								script_execute(collectScript, collectScriptArg);
+							}
+							else
+							{
+								if (collectScript != -1) script_exists(collectScript)
+							}
 							instance_destroy();
 						}
 						if (hSpeed != 0) image_xscale = sign(hSpeed);
@@ -115,27 +123,19 @@ function vacume()
 
 function AnimateVac()
 {
-	keyVac = keyboard_check(vk_shift);
-	if (!keyVac)
-	{
-		sprite_index = sVacpack;
-	}
-	else
-	{
-		// Update Sprite
-		var _totalFrames = sprite_get_number(sprite_index);
-		image_index = localFrame
-		localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
+	// Update Sprite
+	var _totalFrames = sprite_get_number(sprite_index);
+	image_index = localFrame
+	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 
-		// If animation would loop on next game step
-		if (localFrame >= _totalFrames)
-		{
-			animationEnd = true;
-			localFrame -= _totalFrames
-		} 
-		else 
-		{
-			animationEnd = false;
-		}
+	// If animation would loop on next game step
+	if (localFrame >= _totalFrames)
+	{
+		animationEnd = true;
+		localFrame -= _totalFrames
+	} 
+	else 
+	{
+		animationEnd = false;
 	}
 }
