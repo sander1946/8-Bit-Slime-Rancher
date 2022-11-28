@@ -25,7 +25,7 @@ global.playerItemSlot[SLOT.SLOT2] = ITEM.NONE;
 global.playerItemSlot[SLOT.SLOT3] = ITEM.NONE;
 global.playerItemSlot[SLOT.SLOT4] = ITEM.NONE;
 
-global.playerAmmo = array_create(ITEM.TYPE_COUNT, -1);
+global.playerAmmo = array_create(ITEM.TYPE_COUNT, 0);
 global.playerAmmo[ITEM.PINKPLORT] = 0;
 global.playerAmmo[ITEM.BOOMPLORT] = 0;
 global.playerAmmo[ITEM.TABBYPLORT] = 0;
@@ -33,6 +33,13 @@ global.playerAmmo[ITEM.RADPLORT] = 0;
 global.playerAmmo[ITEM.HONEYPLORT] = 0;
 global.playerAmmo[ITEM.STAWBERRY] = 0;
 global.playerAmmo[ITEM.GOLDPLORT] = 0;
+global.playerAmmo[ITEM.PINKSLIME] = 0;
+global.playerAmmo[ITEM.BOOMSLIME] = 0;
+global.playerAmmo[ITEM.TABBYSLIME] = 0;
+global.playerAmmo[ITEM.RADSLIME] = 0;
+global.playerAmmo[ITEM.HONEYSLIME] = 0;
+global.playerAmmo[ITEM.STAWBERRY] = 0;
+global.playerAmmo[ITEM.GOLDSLIME] = 0;
 
 // prices
 global.plortPrice = array_create(ITEM.TYPE_COUNT, -1);

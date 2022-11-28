@@ -74,6 +74,7 @@
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":0,},
     {"id":{"name":"oQuestNPC","path":"objects/oQuestNPC/oQuestNPC.yy",},"order":0,},
     {"id":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"order":6,},
+    {"id":{"name":"oInstanceSpawner","path":"objects/oInstanceSpawner/oInstanceSpawner.yy",},"order":3,},
     {"id":{"name":"playerAnimateSprite","path":"scripts/playerAnimateSprite/playerAnimateSprite.yy",},"order":0,},
     {"id":{"name":"sSlimeBoomHurt","path":"sprites/sSlimeBoomHurt/sSlimeBoomHurt.yy",},"order":5,},
     {"id":{"name":"pFood","path":"objects/pFood/pFood.yy",},"order":0,},
