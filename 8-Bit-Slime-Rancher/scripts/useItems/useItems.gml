@@ -93,15 +93,17 @@ function dropSlime(_slimeID, _ObjectID)
 		{
 			for (var i = 0; i < 10; i++)
 			{
-				var _mx = mouse_x;
-				var _my = mouse_y;
-				dir = point_direction(x, y, _mx, _my);
-				hSpeed = lengthdir_x(1, dir);
-				vSpeed = lengthdir_y(1, dir);
-				x += hSpeed;
-				y += vSpeed;
+				dir = point_direction(x, y, mouse_x, mouse_y);
+				var _x = lengthdir_x(1, dir);
+				var _y = lengthdir_y(1, dir);
+				var _xTo = lengthdir_x(10, dir);
+				var _yTo = lengthdir_y(10, dir);
+				xTo = x + _xTo;
+				yTo = y + _yTo;
+				x += _x;
+				y += _y;
 				
-				if (hSpeed != 0) image_xscale = sign(hSpeed);
+				if (xTo != 0) image_xscale = sign(xTo);
 				
 				depth = -bbox_bottom
 			}
