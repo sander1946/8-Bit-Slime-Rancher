@@ -1,5 +1,6 @@
-function purchaseItem(_item, _amount, _cost, _type="Item", _deleteid=-1)
+function purchaseItem(_item, _amount, _cost, _type, _deleteid=-1)
 {
+	if (_type == 0){_type = "Item";}
 	if (global.playerMoney >= _cost)
 	{
 		if (_type == "Item")

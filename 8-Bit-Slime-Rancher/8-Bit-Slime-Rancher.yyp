@@ -139,6 +139,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":1,},
     {"id":{"name":"playerThrow","path":"scripts/playerThrow/playerThrow.yy",},"order":3,},
     {"id":{"name":"sBomb","path":"sprites/sBomb/sBomb.yy",},"order":3,},
+    {"id":{"name":"oFarmPoint","path":"objects/oFarmPoint/oFarmPoint.yy",},"order":6,},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},"order":1,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"sSlimePink","path":"sprites/sSlimePink/sSlimePink.yy",},"order":0,},
