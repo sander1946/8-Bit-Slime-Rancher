@@ -14,6 +14,19 @@ keyItemSelect2 = keyboard_check_pressed(ord("2"));
 keyItemSelect3 = keyboard_check_pressed(ord("3"));
 keyItemSelect4 = keyboard_check_pressed(ord("4"));
 
+if keyboard_check_pressed(ord("P")) {
+	save_Game();
+	show_debug_message("save")
+	}
+
+if keyboard_check_pressed(ord("L")) {
+	load_Game();
+	show_debug_message("load")
+	}
+
+
+
+
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 

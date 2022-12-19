@@ -353,9 +353,65 @@ function save_Game()
 	save_Room();
 	
 	//set san save stat related stuff
-	global.statData.save_x = oPlayer.x;
-	global.statData.save_y = oPlayer.y;
+	global.statData.player_x = oPlayer.x;
+	global.statData.player_y = oPlayer.y;
+	global.statData.player_direction = oPlayer.direction;
 	global.statData.save_rm = room_get_name(room);
+	global.statData.iLifted = global.iLifted;
+	global.statData.playerHealth = global.playerHealth;
+	global.statData.playerMoney = global.playerMoney;
+	global.statData.playerItemSlot = global.playerItemSlot;
+	global.statData.playerItemSlotEquipped = global.playerItemSlotEquipped;
+	global.statData.playerAmmo = global.playerAmmo;
+	global.statData.plortPrice = global.plortPrice;
+	global.statData.questStatus = global.questStatus;
+	
+	array_push(_saveArray, global.statData);
+	
+	// save all the room data
+	array_push(_saveArray, global.levelData);
+	
+	// actual save
+	var _filename = "savedata.sav";
+	var _json = json_stringify(_saveArray);
+	var _buffer = buffer_create( string_byte_length(_json) + 1, buffer_fixed, 1 );
+	buffer_write( _buffer, buffer_string, _json );
+	buffer_save( _buffer, _filename );
+	buffer_delete( _buffer );
 	
 	
+}
+
+function load_Game()
+{
+	// loading our saved data
+	var _filename = "savedata.sav"
+	if !file_exists(_filename) exit;
+	// load the buffer, hget the json, delete the buffer to free memory
+	var _buffer = buffer_load(_filename);
+	var _json = buffer_read(_buffer, buffer_string);
+	buffer_delete(_buffer);
+	
+	var _loadArray = json_parse(_json);
+	
+	global.statData = array_get(_loadArray, 0);
+	global.levelData = array_get(_loadArray, 1);
+	
+	oPlayer.x = global.statData.player_x;
+	oPlayer.y = global.statData.player_y;
+	oPlayer.direction = global.statData.player_direction;
+	global.iLifted = global.statData.iLifted;
+	global.playerHealth = global.statData.playerHealth;
+	global.playerMoney = global.statData.playerMoney;
+	global.playerItemSlot = global.statData.playerItemSlot;
+	global.playerItemSlotEquipped = global.statData.playerItemSlotEquipped;
+	global.playerAmmo = global.statData.playerAmmo;
+	global.plortPrice = global.statData.plortPrice;
+	global.questStatus = global.statData.questStatus;	
+	global.targetRoom = asset_get_index(global.statData.save_rm);;
+	global.targetX = global.statData.player_x;
+	global.targetY = global.statData.player_y;
+	global.targetDirection = global.statData.player_direction
+	roomTransition(TRANS_TYPE.SLIDE, global.targetRoom);	
+	load_Room();
 }
