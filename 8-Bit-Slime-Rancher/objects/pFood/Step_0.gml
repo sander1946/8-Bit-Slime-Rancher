@@ -15,8 +15,6 @@ if (instance_exists(oFarmPoint))
 			_item = collectScriptArg[0];
 			switch (_item)
 			{
-				case ITEM.STAWBERRY: collectCoins(global.plortPrice[ITEM.PINKPLORT]);instance_destroy();break;
-				case ITEM.STAWBERRY: collectCoins(global.plortPrice[ITEM.PINKPLORT]);instance_destroy();break;
 				case ITEM.BOOMPLORT: collectCoins(global.plortPrice[ITEM.BOOMPLORT]);instance_destroy();break;
 				case ITEM.TABBYPLORT: collectCoins(global.plortPrice[ITEM.TABBYPLORT]);instance_destroy();break;
 				case ITEM.RADPLORT: collectCoins(global.plortPrice[ITEM.RADPLORT]);instance_destroy();break;
