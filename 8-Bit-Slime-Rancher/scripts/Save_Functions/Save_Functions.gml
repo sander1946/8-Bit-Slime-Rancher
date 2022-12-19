@@ -343,3 +343,19 @@ function load_Room()
 	}	
 	
 }
+
+//overal saving
+function save_Game()
+{
+	var _saveArray = array_create(0);
+	
+	// save the room you're in
+	save_Room();
+	
+	//set san save stat related stuff
+	global.statData.save_x = oPlayer.x;
+	global.statData.save_y = oPlayer.y;
+	global.statData.save_rm = room_get_name(room);
+	
+	
+}

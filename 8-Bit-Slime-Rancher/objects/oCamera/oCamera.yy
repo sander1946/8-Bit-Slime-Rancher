@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oCamera",
-  "spriteId": null,
+  "spriteId": {
+    "name": "sCamera",
+    "path": "sprites/sCamera/sCamera.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
