@@ -345,7 +345,7 @@ function load_Room()
 }
 
 //overal saving
-function save_Game()
+function save_Game(_fileNum = 0)
 {
 	var _saveArray = array_create(0);
 	
@@ -372,7 +372,7 @@ function save_Game()
 	array_push(_saveArray, global.levelData);
 	
 	// actual save
-	var _filename = "savedata.sav";
+	var _filename = "savedata" + string(_fileNum) + ".sav";
 	var _json = json_stringify(_saveArray);
 	var _buffer = buffer_create( string_byte_length(_json) + 1, buffer_fixed, 1 );
 	buffer_write( _buffer, buffer_string, _json );
@@ -382,10 +382,10 @@ function save_Game()
 	
 }
 
-function load_Game()
+function load_Game(_fileNum = 0)
 {
 	// loading our saved data
-	var _filename = "savedata.sav"
+	var _filename = "savedata" + string(_fileNum) + ".sav";
 	if !file_exists(_filename) exit;
 	// load the buffer, hget the json, delete the buffer to free memory
 	var _buffer = buffer_load(_filename);

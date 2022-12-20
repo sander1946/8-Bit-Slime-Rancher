@@ -1,7 +1,7 @@
 #macro FRAME_RATE 60
 #macro TILE_SIZE 16
 #macro CARDIONAL_DIR round(direction/90)
-#macro ROOM_START rVillage
+#macro ROOM_START rMenu
 
 #macro RESOLITION_W 320
 #macro RESOLITION_H 180
