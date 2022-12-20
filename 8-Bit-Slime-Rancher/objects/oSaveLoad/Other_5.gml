@@ -4,6 +4,9 @@ if (room != rInit)
 {
 	if (room != rMenu)
 	{
-		save_Game(global.gameSaveSlot);
+		if (room != rMenu_load)
+		{
+			save_Game(global.gameSaveSlot);
+		}
 	}
 }

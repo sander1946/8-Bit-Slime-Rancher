@@ -3,6 +3,7 @@ randomize();
 
 global.gameSaveSlot = 0;
 
+global.needsloading = false;
 
 global.gamePaused = false;
 global.textSpeed = 0.75;

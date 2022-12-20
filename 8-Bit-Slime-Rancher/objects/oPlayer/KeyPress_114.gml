@@ -1,1 +1,1 @@
-loadGame(global.gameSaveSlot);
+load_Game(global.gameSaveSlot);
