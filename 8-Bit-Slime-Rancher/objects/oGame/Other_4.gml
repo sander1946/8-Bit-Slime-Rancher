@@ -11,5 +11,5 @@ layer_set_visible("Background", true);
 if (global.needsloading)
 {
 	global.needsloading = false;
-	load_Game(global.gameSaveSlot);
+	load_Room();
 }
