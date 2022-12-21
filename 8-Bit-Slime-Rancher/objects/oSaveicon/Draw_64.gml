@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, image_index, display_get_gui_width() - sprite_width* 1.2, display_get_gui_height() - sprite_height * 1.2);

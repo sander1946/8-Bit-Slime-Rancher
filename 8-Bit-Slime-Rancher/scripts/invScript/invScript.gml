@@ -34,29 +34,6 @@ function invRemove(_item, _amount)
 			}
 		}
 	}
-//	else
-//	{
-//		// check for empty slot
-//		var _slot = invSearch(ITEM.NONE);
-//		if (_slot != ITEM.NONE)
-//		{
-//			// if so add item to it
-//			global.playerItemSlot[_slot] = _item;
-//		}
-//		else
-//		{
-//			// if not so send error message
-//			show_debug_message("no inv space")
-//		}
-//	}
-
-//	var _slot = invSearch(global.playerItemSlotEquipped-1);
-//	if (_slot != ITEM.NONE)
-//	{
-//		global.playerItemSlot[_slot] = ITEM.NONE;
-//		return true;
-//	}
-//	else return false;
 }
 
 function invAdd(_item, _amount)

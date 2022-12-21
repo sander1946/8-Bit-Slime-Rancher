@@ -378,8 +378,7 @@ function save_Game(_fileNum = 0)
 	buffer_write( _buffer, buffer_string, _json );
 	buffer_save( _buffer, _filename );
 	buffer_delete( _buffer );
-	
-	
+	instance_create_depth(0, 0, layer, oSaveicon);
 }
 
 function load_Game(_fileNum = 0)
@@ -396,9 +395,6 @@ function load_Game(_fileNum = 0)
 	
 	global.statData = array_get(_loadArray, 0);
 	global.levelData = array_get(_loadArray, 1);
-	
-	oPlayer.x = global.statData.player_x;
-	oPlayer.y = global.statData.player_y;
 	oPlayer.direction = global.statData.player_direction;
 	global.iLifted = global.statData.iLifted;
 	global.playerHealth = global.statData.playerHealth;
@@ -408,10 +404,13 @@ function load_Game(_fileNum = 0)
 	global.playerAmmo = global.statData.playerAmmo;
 	global.plortPrice = global.statData.plortPrice;
 	global.questStatus = global.statData.questStatus;	
-	global.targetRoom = asset_get_index(global.statData.save_rm);;
+	var _targetRoom = asset_get_index(global.statData.save_rm);
+	global.targetRoom = asset_get_index(global.statData.save_rm);
 	global.targetX = global.statData.player_x;
 	global.targetY = global.statData.player_y;
-	global.targetDirection = global.statData.player_direction
-	roomTransition(TRANS_TYPE.SLIDE, global.targetRoom);	
+	global.targetDirection = global.statData.player_direction;
+	roomTransition(TRANS_TYPE.SLIDE, _targetRoom);	
+	oPlayer.x = global.statData.player_x;
+	oPlayer.y = global.statData.player_y;
 	load_Room();
 }
