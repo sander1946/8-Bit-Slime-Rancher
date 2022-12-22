@@ -10,8 +10,8 @@ function drawPrices(_x, _y)
 	var _cx, _cy, _xx, _yy, _tx, _ty;
 	//_cx = 123;
 	//_cy = 16;
-	_camx = camera_get_view_x(cam);
-	_camy = camera_get_view_y(cam);
+	var _camx = camera_get_view_x(cam);
+	var _camy = camera_get_view_y(cam);
 	_cx = (_x + 1) - _camx;
 	_cy = (_y) - _camy;
 
@@ -104,4 +104,18 @@ function drawPrices(_x, _y)
 	draw_text(_tx, _ty-1, _str);
 	draw_set_color(c_white);
 	draw_text(_tx, _ty, _str);
+}
+
+function drawFarmIcon(_x, _y, _type)
+{
+	cam = view_camera[0];
+	var _camx = camera_get_view_x(cam);
+	var _camy = camera_get_view_y(cam);
+	// draw Coins
+	var _cx = (_x - 7) - _camx;
+	var _cy = (_y + 8) - _camy;
+
+	// fram icon
+	draw_sprite(sItemUI, _type, _cx, _cy);
+
 }

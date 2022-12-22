@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oFarmPoint",
   "spriteId": {
-    "name": "sSellPoint",
-    "path": "sprites/sSellPoint/sSellPoint.yy",
+    "name": "sFarmPoint",
+    "path": "sprites/sFarmPoint/sFarmPoint.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"foodType","varType":0,"value":"ITEM.NONE","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "other",

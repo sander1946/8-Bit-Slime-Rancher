@@ -1,8 +1,9 @@
-// magnetise to sell point
+// magnetise to farm point
 if (instance_exists(oFarmPoint))
 {
-	var _spx = oFarmPoint.x;
-	var _spy = oFarmPoint.y;
+	var _inst = instance_nearest(x, y, oFarmPoint);
+	var _spx = _inst.x;
+	var _spy = _inst.y;
 	var _dist = point_distance(x, y, _spx, _spy);
 	if (_dist < 20) // magnet radius
 	{
@@ -13,15 +14,11 @@ if (instance_exists(oFarmPoint))
 		if (_dist < 10) // collect radius
 		{
 			_item = collectScriptArg[0];
-			switch (_item)
+			with (_inst)
 			{
-				case ITEM.BOOMPLORT: collectCoins(global.plortPrice[ITEM.BOOMPLORT]);instance_destroy();break;
-				case ITEM.TABBYPLORT: collectCoins(global.plortPrice[ITEM.TABBYPLORT]);instance_destroy();break;
-				case ITEM.RADPLORT: collectCoins(global.plortPrice[ITEM.RADPLORT]);instance_destroy();break;
-				case ITEM.HONEYPLORT: collectCoins(global.plortPrice[ITEM.HONEYPLORT]);instance_destroy();break;
-				case ITEM.STAWBERRY: break;
-				default: break;
+				foodType = other._item;
 			}
+			instance_destroy();
 		}
 	}
 }
