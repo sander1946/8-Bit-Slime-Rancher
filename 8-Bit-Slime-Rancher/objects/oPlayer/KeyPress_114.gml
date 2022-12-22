@@ -1,1 +1,0 @@
-load_Game(global.gameSaveSlot);
