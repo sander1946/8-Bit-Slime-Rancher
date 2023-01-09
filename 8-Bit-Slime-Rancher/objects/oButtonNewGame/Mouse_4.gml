@@ -11,6 +11,7 @@ for (var _i = 0; _i < 3; _i += 1)
 if (global.gameSaveSlot >= 3)
 {
 	show_debug_message("no more save slots")
+	instance_create_depth(0, 0, layer, oNoSaveSlots);
 }
 else
 {
