@@ -34,6 +34,7 @@
     {"id":{"name":"oSignpost","path":"objects/oSignpost/oSignpost.yy",},"order":0,},
     {"id":{"name":"oArrowDrop","path":"objects/oArrowDrop/oArrowDrop.yy",},"order":5,},
     {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},"order":2,},
+    {"id":{"name":"oPotato","path":"objects/oPotato/oPotato.yy",},"order":2,},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"order":0,},
     {"id":{"name":"oSlimeTabby","path":"objects/oSlimeTabby/oSlimeTabby.yy",},"order":3,},
     {"id":{"name":"playerActOutAnimation","path":"scripts/playerActOutAnimation/playerActOutAnimation.yy",},"order":2,},
