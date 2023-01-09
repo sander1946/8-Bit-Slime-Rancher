@@ -141,6 +141,7 @@
     {"id":{"name":"screenShake","path":"scripts/screenShake/screenShake.yy",},"order":0,},
     {"id":{"name":"oHat","path":"objects/oHat/oHat.yy",},"order":2,},
     {"id":{"name":"sRoof","path":"sprites/sRoof/sRoof.yy",},"order":6,},
+    {"id":{"name":"sPotato","path":"sprites/sPotato/sPotato.yy",},"order":1,},
     {"id":{"name":"sSlimeRadHurt","path":"sprites/sSlimeRadHurt/sSlimeRadHurt.yy",},"order":14,},
     {"id":{"name":"roomTransition","path":"scripts/roomTransition/roomTransition.yy",},"order":0,},
     {"id":{"name":"enemyTileCollision","path":"scripts/enemyTileCollision/enemyTileCollision.yy",},"order":1,},
