@@ -1,6 +1,6 @@
 if (++wait >= waitDuration)
 {
-	waitDuration = random_range(1,2);
+	waitDuration = random_range(240,360);
 	wait = 0;
 	timePassed = 0;
 	var _x = x + 65 + random_range(-30, 30);
