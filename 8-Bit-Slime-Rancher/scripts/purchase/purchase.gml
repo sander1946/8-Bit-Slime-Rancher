@@ -1,4 +1,25 @@
-function purchaseItem(_item, _amount, _cost, _type, _deleteid=-1)
+function purchaseItem(_item, _amount, _cost)
+{
+	if (global.playerMoney >= _cost)
+	{
+		invAdd(_item, _amount);
+		global.playerMoney -= _cost;
+		if (!activate.canBuyMultiple) instance_destroy(activate);
+		
+		var _desc = "";
+		switch (_item)
+		{
+			default: _desc = "no description found!"; break;
+		}
+		newTextBox(_desc, 1);		
+	}
+	else
+	{
+		newTextBox("you to poor", 1);
+	}
+}
+
+function purchasePlot(_item, _amount, _cost, _type, _deleteid=-1)
 {
 	if (_type == -1){_type = "Item";}
 	if (global.playerMoney >= _cost)
@@ -39,3 +60,4 @@ function purchaseItem(_item, _amount, _cost, _type, _deleteid=-1)
 		newTextBox("you to poor", 1);
 	}
 }
+
