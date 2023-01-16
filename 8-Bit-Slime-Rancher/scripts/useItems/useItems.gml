@@ -18,6 +18,7 @@ function itemSwitch()
 		case ITEM.GOLDSLIME: dropSlime(ITEM.GOLDSLIME, oSlimeGold);break;
 		// food
 		case ITEM.STAWBERRY: dropPlort(ITEM.STAWBERRY, oStrawberry);break;
+		case ITEM.PATATO: dropPlort(ITEM.PATATO, oPotato);break;
 		default: break;
 	}
 }
