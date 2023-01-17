@@ -14,6 +14,7 @@ function save_Room()
 	var _tabbySlimeNum = instance_number(oSlimeTabby);
 	var _radSlimeNum = instance_number(oSlimeRad);
 	var _honeySlimeNum = instance_number(oSlimeHoney);
+	var _goldSlimeNum = instance_number(oSlimeGold);
 	
 	// plorts
 	var _pinkPlortNum = instance_number(oPlortPink);
@@ -21,12 +22,18 @@ function save_Room()
 	var _tabbyPlortNum = instance_number(oPlortTabby);
 	var _radPlortNum = instance_number(oPlortRad);
 	var _honeyPlortNum = instance_number(oPlortHoney);
+	var _goldPlortNum = instance_number(oPlortGold);
 	
 	// fruits
 	var _strawberryNum = instance_number(oStrawberry);
+	var _patatoNum = instance_number(oPotato);
 	
 	// signs
 	var _signNum = instance_number(oSignpost);
+	
+	// worldobjects
+	var _slimeSpawnerNum = instance_number(oSlimeSpawner);
+	var _farmPointNum = instance_number(oFarmPoint);
 	
 	var _roomStruct = 
 	{
@@ -49,6 +56,8 @@ function save_Room()
 		radSlimeNumData : array_create(_radSlimeNum),
 		honeySlimeNum : _honeySlimeNum,
 		honeySlimeNumData : array_create(_honeySlimeNum),
+		goldSlimeNum : _goldSlimeNum,
+		goldSlimeNumData : array_create(_goldSlimeNum),
 		// plorts
 		pinkPlortNum : _pinkPlortNum,
 		pinkPlortNumData : array_create(_pinkPlortNum),
@@ -60,16 +69,24 @@ function save_Room()
 		radPlortNumData : array_create(_radPlortNum),
 		honeyPlortNum : _honeyPlortNum,
 		honeyPlortNumData : array_create(_honeyPlortNum),
+		goldPlortNum : _goldPlortNum,
+		goldPlortNumData : array_create(_goldPlortNum),
 		// fruits
 		strawberryNum : _strawberryNum,
 		strawberryNumData : array_create(_strawberryNum),
+		patatoNum : _patatoNum,
+		patatoNumData : array_create(_patatoNum),
 		// signs
 		signNum : _signNum,
 		signNumData : array_create(_signNum),
+		// worldobjects
+		slimeSpawnerNum : _slimeSpawnerNum,
+		slimeSpawnerNumData : array_create(_slimeSpawnerNum),
+		farmPointNum : _farmPointNum,
+		farmPointNumData : array_create(_farmPointNum),
 	}
-	
+
 	// get the date for the diverent savable objects
-	
 	// coins
 	for (var _i = 0; _i < _coinNum; _i++)
 	{
@@ -147,6 +164,15 @@ function save_Room()
 			y : _inst.y,
 		}
 	}
+	for (var _i = 0; _i < _goldSlimeNum; _i++)
+	{
+		var _inst = instance_find(oSlimeGold, _i);
+		_roomStruct.goldSlimeNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
 	
 	// plorts
 	for (var _i = 0; _i < _pinkPlortNum; _i++)
@@ -194,12 +220,30 @@ function save_Room()
 			y : _inst.y,
 		}
 	}
+	for (var _i = 0; _i < _goldPlortNum; _i++)
+	{
+		var _inst = instance_find(oPlortGold, _i);
+		_roomStruct.goldPlortNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
 	
 	// fruits
 	for (var _i = 0; _i < _strawberryNum; _i++)
 	{
 		var _inst = instance_find(oStrawberry, _i);
 		_roomStruct.strawberryNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+		}
+	}
+	for (var _i = 0; _i < _patatoNum; _i++)
+	{
+		var _inst = instance_find(oPotato, _i);
+		_roomStruct.patatoNumData[_i] = 
 		{
 			x : _inst.x,
 			y : _inst.y,
@@ -221,7 +265,37 @@ function save_Room()
 			itemCost : _inst.itemCost,
 			itemAmount : _inst.itemAmount,
 			type : _inst.type,
+		}
+	}
+	
+	// worldobjects
+	for (var _i = 0; _i < _slimeSpawnerNum; _i++)
+	{
+		var _inst = instance_find(oSlimeSpawner, _i);
+		_roomStruct.slimeSpawnerNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+			spawnAmount_lower : _inst.spawnAmount_lower,
+			spawnAmount_upper : _inst.spawnAmount_upper,
+			rangeWaitDuration_lower : _inst.rangeWaitDuration_lower,
+			rangeWaitDuration_upper : _inst.rangeWaitDuration_upper,
+			slimeSlotAmmount : _inst.slimeSlotAmmount,
+			slimeSlot1 : _inst.slimeSlot1,
+			slimeSlot2 : _inst.slimeSlot2,
+			slimeSlot3 : _inst.slimeSlot3,
+			slimeSlot4 : _inst.slimeSlot4,
 			
+		}
+	}
+	for (var _i = 0; _i < _farmPointNum; _i++)
+	{
+		var _inst = instance_find(oFarmPoint, _i);
+		_roomStruct.farmPointNumData[_i] = 
+		{
+			x : _inst.x,
+			y : _inst.y,
+			foodType : _inst.foodType,
 		}
 	}
 	
@@ -291,6 +365,11 @@ function load_Room()
 	{
 		instance_create_depth(_roomStruct.honeySlimeNumData[_i].x, _roomStruct.honeySlimeNumData[_i].y, layer, oSlimeHoney);
 	}
+	if (instance_exists(oSlimeGold)) {instance_destroy(oSlimeGold)}
+	for (var _i = 0; _i < _roomStruct.goldSlimeNum; _i++)
+	{
+		instance_create_depth(_roomStruct.goldSlimeNumData[_i].x, _roomStruct.goldSlimeNumData[_i].y, layer, oSlimeGold);
+	}
 	
 	// plorts
 	if (instance_exists(oPlortPink)) {instance_destroy(oPlortPink)}
@@ -318,12 +397,22 @@ function load_Room()
 	{
 		instance_create_depth(_roomStruct.honeyPlortNumData[_i].x, _roomStruct.honeyPlortNumData[_i].y, layer, oPlortHoney);
 	}
+	if (instance_exists(oPlortGold)) {instance_destroy(oPlortGold)}
+	for (var _i = 0; _i < _roomStruct.goldPlortNum; _i++)
+	{
+		instance_create_depth(_roomStruct.goldPlortNumData[_i].x, _roomStruct.goldPlortNumData[_i].y, layer, oPlortGold);
+	}
 	
 	// fruits
 	if (instance_exists(oStrawberry)) {instance_destroy(oStrawberry)}
 	for (var _i = 0; _i < _roomStruct.strawberryNum; _i++)
 	{
 		instance_create_depth(_roomStruct.strawberryNumData[_i].x, _roomStruct.strawberryNumData[_i].y, layer, oStrawberry);
+	}	
+	if (instance_exists(oPotato)) {instance_destroy(oPotato)}
+	for (var _i = 0; _i < _roomStruct.patatoNum; _i++)
+	{
+		instance_create_depth(_roomStruct.patatoNumData[_i].x, _roomStruct.patatoNumData[_i].y, layer, oPotato);
 	}	
 	
 	// signs
@@ -341,7 +430,31 @@ function load_Room()
 			type = _roomStruct.signNumData[_i].type;
 		}
 	}	
-	
+	// world objects
+	if (instance_exists(oSlimeSpawner)) {instance_destroy(oSlimeSpawner)}
+	for (var _i = 0; _i < _roomStruct.slimeSpawnerNum; _i++)
+	{
+		with(instance_create_depth(_roomStruct.slimeSpawnerNumData[_i].x, _roomStruct.slimeSpawnerNumData[_i].y, layer, oSlimeSpawner))
+		{
+			spawnAmount_lower = _roomStruct.slimeSpawnerNumData[_i].spawnAmount_lower;
+			spawnAmount_upper = _roomStruct.slimeSpawnerNumData[_i].spawnAmount_upper;
+			rangeWaitDuration_lower = _roomStruct.slimeSpawnerNumData[_i].rangeWaitDuration_lower;
+			rangeWaitDuration_upper = _roomStruct.slimeSpawnerNumData[_i].rangeWaitDuration_upper;
+			slimeSlotAmmount = _roomStruct.slimeSpawnerNumData[_i].slimeSlotAmmount;
+			slimeSlot1 = _roomStruct.slimeSpawnerNumData[_i].slimeSlot1;
+			slimeSlot2 = _roomStruct.slimeSpawnerNumData[_i].slimeSlot2;
+			slimeSlot3 = _roomStruct.slimeSpawnerNumData[_i].slimeSlot3;
+			slimeSlot4 = _roomStruct.slimeSpawnerNumData[_i].slimeSlot4;
+		}
+	}
+	if (instance_exists(oFarmPoint)) {instance_destroy(oFarmPoint)}
+	for (var _i = 0; _i < _roomStruct.farmPointNum; _i++)
+	{
+		with(instance_create_depth(_roomStruct.farmPointNumData[_i].x, _roomStruct.farmPointNumData[_i].y, layer, oFarmPoint))
+		{
+			foodType = _roomStruct.farmPointNumData[_i].foodType;
+		}
+	}
 }
 
 //overal saving
