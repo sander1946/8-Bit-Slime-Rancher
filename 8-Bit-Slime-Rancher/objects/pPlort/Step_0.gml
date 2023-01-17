@@ -20,6 +20,7 @@ if (instance_exists(oSellPoint))
 				case ITEM.TABBYPLORT: collectCoins(global.plortPrice[ITEM.TABBYPLORT]);instance_destroy();break;
 				case ITEM.RADPLORT: collectCoins(global.plortPrice[ITEM.RADPLORT]);instance_destroy();break;
 				case ITEM.HONEYPLORT: collectCoins(global.plortPrice[ITEM.HONEYPLORT]);instance_destroy();break;
+				case ITEM.GOLDPLORT: collectCoins(global.plortPrice[ITEM.GOLDPLORT]);instance_destroy();break;
 				case ITEM.STAWBERRY: break;
 				default: break;
 			}

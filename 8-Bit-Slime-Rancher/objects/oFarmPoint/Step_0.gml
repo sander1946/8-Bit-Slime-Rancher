@@ -8,6 +8,7 @@ if (++wait >= waitDuration)
 	switch(foodType)
 	{
 		case ITEM.STAWBERRY: instance_create_depth(_x, _y, layer, oStrawberry);
+		case ITEM.PATATO: instance_create_depth(_x, _y, layer, oPotato);
 		default: break;
 	}
 }
