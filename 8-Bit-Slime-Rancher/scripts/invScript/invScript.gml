@@ -75,6 +75,7 @@ function invAdd(_item, _amount)
 				case ITEM.GOLDSLIME: dropSlime_fullInv(ITEM.GOLDSLIME, oSlimeGold);break;
 				// food
 				case ITEM.STAWBERRY: dropPlort_fullInv(ITEM.STAWBERRY, oStrawberry);break;
+				case ITEM.PATATO: dropPlort_fullInv(ITEM.PATATO, oPotato);break;
 				default: break;
 			}
 		}
