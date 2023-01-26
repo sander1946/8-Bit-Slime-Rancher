@@ -1,1 +1,0 @@
-invRemove(ITEM.BOMB);
