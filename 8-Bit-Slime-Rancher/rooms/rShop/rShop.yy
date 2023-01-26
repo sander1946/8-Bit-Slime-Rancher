@@ -57,7 +57,7 @@
 -28,1,1,-2147483648,-4,1,-6,-2147483648,-9,1,-11,-2147483648,-9,1,-11,-2147483648,-9,1,-11,-2147483648,
 -9,1,-2,-2147483648,-5,1,-4,-2147483648,-3,1,1,-2147483648,-4,1,-3,-2147483648,-5,1,-4,-2147483648,
 -3,1,-8,-2147483648,-5,1,-4,-2147483648,-4,1,-16,-2147483648,-4,1,1,0,-15,-2147483648,-41,1,
-],},"visible":false,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+],},"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Col","tilesetId":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":12,"TileCompressedData":[
 -28,1,1,0,-4,1,-7,0,-8,1,-12,0,-8,1,-11,0,-9,1,-11,0,
 -9,1,-2,0,-5,1,-4,0,-3,1,1,0,-4,1,-3,0,-5,1,-4,0,
